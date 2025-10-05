@@ -1,5 +1,13 @@
+name: Student Echo Test
+
+on: [push, workflow_dispatch]
+
 jobs:
   test:
+    # Specify the runner environment
+    runs-on: ubuntu-latest
+    
     steps:
+      # This step name includes the unique identifier you provided
       - name: 24f2004631@ds.study.iitm.ac.in
         run: echo "Hello, world!"
